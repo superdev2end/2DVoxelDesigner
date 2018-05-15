@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/2D_Voxel_Designer_Icon.ico</file>
+        <file>resource/2D_Voxel_Designer_Icon.png</file>
+        <file>resource/2D_Voxel_Designer_LOGO.png</file>
+        <file>resource/3_point_arc.png</file>
+        <file>resource/3_point_circle.png</file>
+        <file>resource/3_point_oval.png</file>
+        <file>resource/center_arc.png</file>
+        <file>resource/center_circle.png</file>
+        <file>resource/center_oval.png</file>
+        <file>resource/center_to_corner_rectangle.png</file>
+        <file>resource/corner_to_corner_reactangle.png</file>
+        <file>resource/handle_curve.png</file>
+        <file>resource/line.png</file>
+        <file>resource/point_curve.png</file>
+        <file>resource/point_handle_curve.png</file>
+        <file>resource/polygon.png</file>
+        <file>resource/select_object.png</file>
+        <file>resource/point_select.png</file>
+        <file>resource/voxel_select.png</file>
+        <file>resource/hide.png</file>
+        <file>resource/hide_hover.png</file>
+        <file>resource/locked.png</file>
+        <file>resource/locked_hover.png</file>
+        <file>resource/unlocked.png</file>
+        <file>resource/unlocked_hover.png</file>
+        <file>resource/visibility.png</file>
+        <file>resource/visibility_hover.png</file>
+        <file>resource/hide_gray.png</file>
+        <file>resource/locked_gray.png</file>
+        <file>resource/unlocked_gray.png</file>
+        <file>resource/visibility_gray.png</file>
+    </qresource>
+</RCC>

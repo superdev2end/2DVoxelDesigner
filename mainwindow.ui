@@ -1,0 +1,2512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1479</width>
+    <height>962</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>2D Voxel Designer v2.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/resource/2D_Voxel_Designer_Icon.png</normaloff>:/resource/2D_Voxel_Designer_Icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(96, 96, 96);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="maximumSize">
+       <size>
+        <width>275</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_1">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QWidget" name="verticalWidget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resource.qrc">:/resource/2D_Voxel_Designer_LOGO.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnNew">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>NEW</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnOpen">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>OPEN</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnSave">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>SAVE</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_10" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>10</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEditMode">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>EDIT MODE</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_11" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>10</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_9" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QPushButton" name="btnPointSelect">
+                <property name="minimumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Select Node</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/point_select.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(150, 150, 150);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnVoxelSelect">
+                <property name="minimumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Select Voxel</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/voxel_select.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(150, 150, 150);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widLineColor_6" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="btnColorVoxel">
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="btnSetVoxelColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+                </property>
+                <property name="text">
+                 <string>SET VOXEL COLOR</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="btnRemoveVoxelColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+                </property>
+                <property name="text">
+                 <string>REMOVE VOXEL COLOR</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnReactorGuide">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:checked{
+color: rgb(255, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>REACTOR GUIDE</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>210</width>
+               <height>210</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>210</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(182, 182, 182);</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="Widget" name="widReactorPreview" native="true">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(182, 182, 182);
+border: none;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnCopyCoordinates">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>COPY COORDINATES</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widLineColor" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="rightMargin">
+               <number>40</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="lblLineColor">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>GRID COLOR</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnLineColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnResetPoint">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>RESET POINT</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnResetAllPoint">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>RESET ALL POINTS</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widSpace_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+	border-right: 3px solid rgb(182, 182, 182);
+	border-left: 3px solid rgb(182, 182, 182);
+border-bottom: 3px solid rgb(182, 182, 182);
+}</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}</string>
+                </property>
+                <property name="text">
+                 <string>LAYER OPTIONS</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="chkActiveBtn">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox {
+margin-left:10px;
+margin-right:10px;
+border-left:none;
+border-bottom:none;
+border-right:none;
+}
+
+QCheckBox::indicator {
+    width:                  12px;
+    height:                 12px;
+    border-radius:          0px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       red;
+        border:                 3px solid rgb(200,200,200);
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       rgb(96,96,96);
+    border:                 3px solid rgb(200,200,200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>ACTIVE</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="chkHideShowBtn">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox {
+margin-left:10px;
+margin-right:10px;
+border-left:none;
+border-bottom:none;
+border-right:none;
+}
+
+QCheckBox::indicator {
+    width:                  12px;
+    height:                 12px;
+    border-radius:          0px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       red;
+        border:                 3px solid rgb(200,200,200);
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       rgb(96,96,96);
+    border:                 3px solid rgb(200,200,200);
+}</string>
+                </property>
+                <property name="text">
+                 <string>HIDE/SHOW</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="verticalWidget_2" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resource.qrc">:/resource/2D_Voxel_Designer_LOGO.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widLineColor_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="lblBackgroundColor">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>BACKGROUND COLOR</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnBackgroundColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="Widget" name="widReactorPreview_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>210</width>
+               <height>250</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>210</width>
+               <height>250</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(182, 182, 182);</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QWidget" name="widget_2" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <widget class="QPushButton" name="btnSelectObject">
+                 <property name="geometry">
+                  <rect>
+                   <x>83</x>
+                   <y>0</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/select_object.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(150, 150, 150);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_8" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QPushButton" name="btnLine">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>0</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/line.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/resource/line.png</normaloff>:/resource/line.png</iconset>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_7" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QPushButton" name="btnCornerToCornerReactangle">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/corner_to_corner_reactangle.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnCenterToCornerRectangle">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/center_to_corner_rectangle.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_6" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QPushButton" name="btnCenterCircle">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/center_circle.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn3PointCircle">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/3_point_circle.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnCenterOval">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/center_oval.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn3PointOval">
+                 <property name="geometry">
+                  <rect>
+                   <x>160</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/3_point_oval.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_5" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QPushButton" name="btnCenterArc">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/center_arc.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn3PointArc">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/3_point_arc.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_4" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QSpinBox" name="sBPolygon">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>0</y>
+                   <width>40</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximum">
+                  <number>99999</number>
+                 </property>
+                 <property name="value">
+                  <number>3</number>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnPolygon">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>0</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/polygon.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_3" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QPushButton" name="btnHandleCurve">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/handle_curve.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnPointCurve">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/point_curve.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btnPointHandleCurve">
+                 <property name="geometry">
+                  <rect>
+                   <x>110</x>
+                   <y>3</y>
+                   <width>25</width>
+                   <height>25</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>25</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background-color: rgb(170, 170, 170);
+	border-image: url(:/resource/point_handle_curve.png);
+}
+
+QPushButton:hover{
+	background-color: rgb(170, 170, 170);
+}
+
+QPushButton:pressed{
+	background-color: rgb(200, 200, 200);
+}
+
+QPushButton:checked{
+	background-color: rgb(230, 230, 230);
+}
+
+QPushButton:disabled {
+	background-color: rgb(100, 100, 100);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widLineColor_4" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="lblLineColor_4">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LINE THICKNESS</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="sBLineWidth">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="value">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widLineColor_3" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="lblLineColor_3">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>COLOR</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnShapeLineColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnOffset">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>OFFSET</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_12" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>10</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnModifyImage">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>IMPORT IMAGE</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnClearImage">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>CLEAR IMAGE</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="chkShowImage">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QCheckBox {
+}
+
+QCheckBox::indicator {
+    width:                  12px;
+    height:                 12px;
+    border-radius:          0px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       red;
+        border:                 3px solid rgb(200,200,200);
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       rgb(96,96,96);
+    border:                 3px solid rgb(200,200,200);
+}</string>
+             </property>
+             <property name="text">
+              <string>SHOW IMAGE</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="chkAspectRatio">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QCheckBox {
+}
+
+QCheckBox::indicator {
+    width:                  12px;
+    height:                 12px;
+    border-radius:          0px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       red;
+        border:                 3px solid rgb(200,200,200);
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       rgb(96,96,96);
+    border:                 3px solid rgb(200,200,200);
+}</string>
+             </property>
+             <property name="text">
+              <string>LOCK RATIO</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="chkLockImage">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QCheckBox {
+}
+
+QCheckBox::indicator {
+    width:                  12px;
+    height:                 12px;
+    border-radius:          0px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       red;
+        border:                 3px solid rgb(200,200,200);
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       rgb(96,96,96);
+    border:                 3px solid rgb(200,200,200);
+}</string>
+             </property>
+             <property name="text">
+              <string>LOCK IMAGE</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_13" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>10</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnLeaveEditMode">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(182, 182, 182);
+border:none;
+}
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(200, 200, 200);
+border:none;
+}
+QPushButton:pressed{
+color: rgb(0, 0, 0);
+background-color: rgb(210, 210, 210);
+border:none;
+}
+QPushButton:disabled {
+color: rgb(96, 96, 96);
+background-color: rgb(200, 200, 200);
+border:none;
+}</string>
+             </property>
+             <property name="text">
+              <string>LEAVE EDIT MODE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widMainView" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="GraphicsView" name="graphicsView"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widLayerWrapper" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="spacing">
+           <number>1</number>
+          </property>
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="CustomLayerButton" name="widButtonLayer1" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="CustomLayerButton" name="widButtonLayer2" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="CustomLayerButton" name="widButtonLayer3" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Widget</class>
+   <extends>QWidget</extends>
+   <header>widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>graphicsview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CustomLayerButton</class>
+   <extends>QWidget</extends>
+   <header>customlayerbutton.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
